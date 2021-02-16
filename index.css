@@ -1,0 +1,448 @@
+/*
+  Name: Miss Dotty Makes
+  Date: February 2021
+  description: >-
+  Website for Miss Dotty's art & creations to sell.
+  Version: 1.0
+  Author: Eden Stoneman
+*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+/* MOBILE CSS */
+body {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.4;
+    text-align: left;
+    background-image: url(main-media/background.jpg)
+}
+h2, h3, h4, h5, h6 {
+  margin-bottom: .8em;
+  font-weight: 400;
+  line-height: 1.1;
+}
+a {
+    text-decoration: none; 
+    color: inherit;
+}
+header img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #ccc;
+  position: relative;
+}
+.topnav #myLinks {
+     display: none;
+}
+.topnav a {
+    color: white;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+.topnav a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -8px;
+    color: #fff;
+}
+.topnav a:hover {
+    color: #fff;
+}
+.active {
+    background-color: #f9caca;
+    color: white;
+}
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    content: "\f0c9";
+}
+nav {
+    display: none;
+}
+nav a {
+    margin: 3px;
+    font-size: 12px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: normal;
+    color: #fff;
+    text-transform: uppercase;
+}
+nav a:hover {
+    color: #fff !important;
+}
+.highlight {
+    color: #333 !important;
+}
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 10px 0;
+    background-color: #fff;
+}
+section {
+    padding: 0 30px;
+}
+.content-title {
+    font-family: American Typewriter, serif;
+    font-weight: normal;
+    color: #666;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+}
+.content-title:before {
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    max-width: 25%;
+    width:100%;
+    left: 0;
+    height: 3px;
+    content: '\a0';
+    background-color: #f9caca;
+}
+.content-title:after {  
+    position: absolute;
+    top: 50%;
+    overflow: hidden;
+    max-width: 25%;
+    width:100%;
+    right: 0;
+    height: 3px;
+    content: '\a0';
+    background-color: #f9caca;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.homepage-blog {
+    width: 100%;
+    margin: 0 0 40px;
+    border: 1px solid #ccc;
+}
+.homepage-blog img{
+    width: 100%;
+    display: inline-block;
+}
+.homepage-blog-text {
+    margin: 20px;
+    display: inline-block;
+}
+.homepage-blog-heading {
+    font-family: American Typewriter, serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.homepage-blog-caption {
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    margin-bottom: 20px;
+}
+.homepage-blog-cta {
+    width: fit-content;
+    background-color: #f9caca;
+    padding: 10px 50px;
+    color: #333;
+    font-family: American Typewriter, serif;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center !important;
+    font-weight: bold;
+    font-size: 14px;
+}
+.homepage-blog-cta:hover {
+    color: #fff;
+    background-color: #333;
+}
+.card {
+    width: 100%;
+    margin: 0 0 40px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 15%);
+}
+.card img{
+    width: 100%;
+    
+    border-radius:20px 20px 0 0;
+}
+.card-text {
+    background-color: #999;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}
+.card-category {
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #666;
+    font-weight: bold;
+    
+    color: #fff !important;
+}
+.card-heading {
+    font-family: American Typewriter, serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff !important;
+}
+.card-caption {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #fff !important;
+}
+.cta {
+    width: fit-content;
+    background-color: #f9caca;
+    padding: 10px 50px;
+    color: #333;
+    font-family: American Typewriter, serif;
+    border-radius: 20px;
+    text-align:center;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 14px;
+}
+.cta:hover {
+    color: #fff;
+    background-color: #333;
+}
+footer {
+    background-color: #f9caca;
+    padding: 20px;
+    margin: 0;
+    color: #fff;
+    text-align: left;
+    height: 50px;
+}
+.footer-container {
+    display:none;
+}
+.mobile-footer {
+    text-align: center;
+    margin: 0 auto;
+}
+.cards-card-heading {
+    font-family: American Typewriter, serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #fff;
+}
+/* SMALLER SCREEN CSS */
+@media only screen and (min-width: 600px) {
+header {
+    text-align: center;
+    width: 100%;
+    
+}
+header h1 {
+    font-size: 30px;
+    margin: 45px 0px;
+    }
+.topnav {
+        display:none;
+    }
+nav {
+    width:100%;
+    padding: 10px 0;
+    background-color: #ccc;
+    text-align:center;
+    margin: 0 auto;
+    padding: 20px 0;
+    display:inherit;
+}
+nav a {
+    margin: 10px;
+    font-size: 16px;
+}
+main {
+    padding: 20px 0;
+}
+section {
+    padding: 0 50px;
+}
+.content-title { 
+    font-size: 30px;
+    }
+.content-title:before {
+    max-width:35%;
+    }
+.content-title:after {
+    max-width:35%;
+    }
+.card-category {
+    font-size: 15px;
+}
+.card-heading {
+    font-size: 25px;
+}
+.card-caption {
+    font-size: 18px; 
+}
+.cta {
+    font-size: 16px;
+}
+.homepage-blog-heading {
+    font-size: 25px;
+}
+.homepage-blog-caption {
+    font-size: 18px;
+}
+.homepage-blog-cta {
+    width: fit-content;
+    background-color: #f9caca;
+    padding: 10px 50px;
+    color: #333;
+    font-family: American Typewriter, serif;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center !important;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+}
+
+
+/* LARGER SCREEN CSS */
+
+@media only screen and (min-width: 1400px) { 
+.body {
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 25%);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+header {
+    max-width: 1400px;
+    text-align: left;
+    padding: 0;
+    margin: 100px auto 0;
+    }
+nav {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+nav a {
+    font-size: 20px;
+    margin: 40px;
+}
+.content-title:before {
+    max-width:40%;
+    }
+.content-title:after {
+    max-width:40%;
+    } 
+.row {margin: 40px 0}
+.column {
+display: inline;
+    }
+.card {
+    width: 29.85%;
+    display: inline-block;
+    }
+.center-card {    
+    margin: 0 60px;
+}
+.homepage-blog {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0;
+    border:none;
+    }
+.homepage-blog img{
+    width: 100%;
+    max-width: 400px;
+    display: inline-block;
+}
+.homepage-blog-text {
+    margin: 0 20px 20px;
+    position: absolute;
+    max-width: 880px;
+}
+.homepage-blog-heading {
+    font-size: 35px;
+}
+.homepage-blog-caption {
+    font-size: 18px;
+    margin-right:15px;
+}
+.homepage-blog-cta {
+    margin: 0;
+    text-align: left!important;
+    font-size: 15px;
+}
+footer {
+    max-width: 1400px;
+    margin: 0 auto 100px;
+    height: 200px;
+    padding: 50px 60px 100px;
+    }
+.mobile-footer {display:none}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block !important;
+    }
+.footer-row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    }
+.footer-column {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 35px;
+    flex: 0 0 40%;
+    }
+.footer-column img {
+    width:200px;
+    }
+.footer-heading {
+    font-size: 25px;
+    color: #666;
+    font-family: American Typewriter, serif;
+    }
+.footer-caption {
+    padding: 10px 0 0;
+    font-size: 18px;
+    color: #666;
+    display: block;  
+    }
+.footer-caption a {
+    display: block;
+    padding: 5px 0 0;    
+    }
+}
